@@ -317,7 +317,7 @@ def main():
     dataset_path = dataset_path_dict[args.dataset_name]
     
     tokenizer = AutoTokenizer.from_pretrained(model_path)
-    llm = LLM(model=model_path)
+    llm = LLM(model=model_path, dtype="half", max_model_len=4096,)
     sampling_params = SamplingParams(temperature=args.temperature, top_p=args.top_p, max_tokens=256)
     
     rule_file_name = os.path.join(dataset_path, f"{args.model_name}_rules.txt")
