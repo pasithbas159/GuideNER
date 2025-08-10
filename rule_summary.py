@@ -10,7 +10,7 @@ from EasyChatTemplating.util_tools import convert_userprompt_transformers, skip_
 
 result_pattern = r'\{.*\}'
 valid_pattern = r'\[\[(.*?)\]\]'
-model_path_dict = {"llama3-chat": "../../pretrained_models/llama3-chat"}
+model_path_dict = {"llama3-chat": "meta-llama/Meta-Llama-3-8B-Instruct"}
 dataset_path_dict = {"conll2003": "./datasets/conll2003",
                      "ace04": "./datasets/ace04",
                      "ace05": "./datasets/ace05",
